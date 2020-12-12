@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Dashboard">
 
-    <item android:id="@+id/menuDetails"
-        android:icon = "@drawable/icon_details"
-        android:title="@string/details"/>
+    <item android:id="@+id/menuToday"
+        android:icon = "@drawable/icon_today"
+        app:showAsAction="never"
+        android:title="@string/today"/>
 
-    <item android:id="@+id/menuSetting"
-        android:icon = "@drawable/icon_setting"
-        android:title="@string/settings"/>
+    <item android:id="@+id/menuHabits"
+        android:icon = "@drawable/icon_myhabits"
+        app:showAsAction="never"
+        android:title="@string/my_habits"/>
 
-    <item android:id="@+id/menuHelp"
+    <item android:id="@+id/menuTutorials"
         android:icon = "@drawable/icon_help"
-        android:title="@string/help"/>
+        app:showAsAction="never"
+        android:title="@string/tutorial"/>
 
     <item android:id="@+id/menuAbout"
         android:icon = "@drawable/icon_about"
+        app:showAsAction="never"
         android:title="@string/about"/>
 
 </menu>
